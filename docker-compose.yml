@@ -3,23 +3,24 @@
 #  stdin_open: true
 #  tty: true
 
-gethconsole:
-  image: kunstmaan/ethereum-geth-console
-  stdin_open: true
-  tty: true
-  links:
-    - devnet
-    - testnet
+#gethconsole:
+#  image: kunstmaan/ethereum-geth-console
+#  stdin_open: true
+#  tty: true
+#  links:
+#    - devnet
+#    - testnet
 
-testnet:
-  image: kunstmaan/ethereum-geth-testnet
-  stdin_open: true
-  tty: true
+#testnet:
+#  image: kunstmaan/ethereum-geth-testnet
+#  stdin_open: true
+#  tty: true
 
 devnet:
-  image: kunstmaan/ethereum-geth-devnet
+#  image: kunstmaan/ethereum-geth-devnet
+  build: ./geth-devnet
   stdin_open: true
   tty: true
-  expose:
-    - 8545
-    - 30303
+  ports:
+    - "8545:8545"
+    - "30303:30303"
