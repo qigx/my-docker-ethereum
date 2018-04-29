@@ -41,7 +41,7 @@ docker attach dockerethereum_devnet_1
 ```
 /Applications/Mist.app/Contents/MacOS/Mist --rpc http://10.211.55.11:8545
 ```
-# linux 命令
+## linux 命令
 * 插看端口
 ```
 sudo netstat -apn
