@@ -22,3 +22,28 @@ docker-compose up -d
 ## Connecting to an image
 
 Run `docker ps`to find the name of the container and attach to it by running `docker attach <containername>`
+
+## 追记
+* docker-machine
+```
+docker-machine create --driver=parallels geth
+eval $(docker-machine env geth)
+```
+* docker-compose
+```
+docker-compose up -d
+docker-compose down
+docker-compose exec devnet sh
+docker attach dockerethereum_devnet_1
+^+pq
+```
+* Mist
+```
+/Applications/Mist.app/Contents/MacOS/Mist --rpc http://10.211.55.11:8545
+```
+# linux 命令
+* 插看端口
+```
+sudo netstat -apn
+nc -v 10.211.55.7 8545
+```
