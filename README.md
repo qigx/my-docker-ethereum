@@ -43,6 +43,11 @@ docker attach dockerethereum_devnet_1
 ```
 geth attach rpc:http://10.211.55.11:8545
 ```
+* console
+```
+web3.eth.getBlock("pending").gasLimit
+web3.eth.getBlock("pending").difficulty
+```
 * Mist
 ```
 /Applications/Mist.app/Contents/MacOS/Mist --rpc http://10.211.55.11:8545
