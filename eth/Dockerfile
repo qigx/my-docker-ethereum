@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:xenial-20210416
 MAINTAINER Roderik van der Veer
 
 ENV DEBIAN_FRONTEND noninteractive
